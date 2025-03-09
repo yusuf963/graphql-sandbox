@@ -12,6 +12,7 @@ const LaptopQueryType = new GraphQLObjectType({
             description: 'List of All Laptops',
             args: {
                 limit: { type: GraphQLInt }
+                
             },
             resolve: (parent, args) => {
                 return args.limit ? laptops.slice(0, limit) : laptops
