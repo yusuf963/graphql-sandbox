@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "debug": "nodemon server.js",
+    "prod": "node server.js"
   },
   "author": "",
   "license": "ISC",
