@@ -5,6 +5,7 @@ function resolverHelper(records, args) {
     return records.find(record => record.id === args.id)
 }
 
+
 export const resolvers = {
     Query: {
         players: () => players,
